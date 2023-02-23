@@ -6,7 +6,9 @@ import Root from './components/root';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 
 const appRouter = createBrowserRouter(createRoutesFromElements(
-  <Route path='/'/>
+  <Route path='/' element={<Root/>} >
+    <Route path='/' element={<HomePage/>} />
+  </Route>
 ));
 
 function App() {
