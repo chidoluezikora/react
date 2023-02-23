@@ -8,7 +8,7 @@ export default function Header () {
   const dispatch = useDispatch();
 
   const handleLogout = e => {
-    dispatch(logOut())
+    dispatch(logOut());
   }
 
   return (
